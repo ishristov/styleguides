@@ -2,8 +2,9 @@
 
 Some generic style guides for writing cleaner and more consistent HTML, CSS and JavaScript.
 
-  - [HTML and CSS guide](https://github.com/ishristov/htmlcssguide)
-  - [JavaScript guide](https://github.com/ishristov/htmlcssguide)
+  - [HTML guide](https://github.com/ishristov/htmlguide)
+  - [CSS guide](https://github.com/ishristov/cssguide)
+  - [JavaScript guide](https://github.com/ishristov/javascriptguide)
 
 ## Inspiration
 
