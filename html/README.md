@@ -17,11 +17,11 @@
 	```html
 	// no
 	<table><tr><td>Cell 1</td><td>Cell 2</td></tr></table>
-
+	
 	// no
 	<p>Paragraph text
 	</p>
-
+	
 	// yes
 	<table>
 		<tr>
