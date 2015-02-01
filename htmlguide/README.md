@@ -143,7 +143,7 @@ Capital letters can be used for user defined strings, e.g. alt and value attribu
   }
   ```
 
-  - Provide alternative content for images
+- Provide alternative content for images
   ```html
   // yes
   <img src="logo.png" alt="Company Logo" />
