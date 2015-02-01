@@ -1,5 +1,37 @@
 # HTML Guide
 
+## Meta Tags and Settings
+
+- Use HTML5. Just put the following line at the top of your HTML document.
+	```html
+	<!DOCTYPE html>
+	```
+
+- Write valid HTML according to http://validator.w3.org/nu/ if possible. This guarantees that you'll see less bugs than if you write messy code.
+
+- Make sure the file is encoded with UTF-8 (without BOM) by checking the encoding settings in your editor. Also put the following line at the top of the head element - before the title and other content elements.
+	```html
+	<meta charset="utf-8" />
+	```
+
+- Use a viewport meta declaration to improve the default visibility on mobile devices.
+	```html
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	```
+
+- Include CSS files at the top of the document (in the head element) and JavaScript files at the bottom (before closing the body element). This is required for better performance and faster loading times.
+
+- Omit the protocol when using URLs in the code. This can prevent issues with unloaded content when one of the sites is using SSL and the other is not.
+	```html
+	// no
+	<script src="http://jquery...."></script>
+
+	// yes
+	<script src="//jquery...."></script>
+	```
+
+- Omit type attributes when including CSS and JavaScript files with link and script elements.
+
 ## General Formatting
 
 - Always use 2 spaces for indentation. Tabs might be rendered differently on different environments. Using 2 spaces also helps in making the lines shorter if there is a lot of nesting.
@@ -50,7 +82,7 @@
 	<div class="main"></div>
 	```
 
-- Don't omit opening or closing HTML tags, even if HTML5 allows is for some elements.
+- Don't omit opening or closing HTML tags, even if HTML5 allows it for some elements.
 	```html
 	// no
 	<p>Paragraph element without closing
@@ -72,7 +104,7 @@ Capital letters can be used for user defined strings, e.g. alt and value attribu
 
 ## Semantics
 
-- Use semantic HTML. That is using <a> for anchors, <h1>-<h6> for headings, <p> for paragraphs, etc. This is good for accessibiity and reusability.
+- Use semantic HTML. That is using a for anchors, h1-h6 for headings, p for paragraphs, etc. This is good for accessibiity and reusability.
 	```html
 	// no
 	<div class="heading">Main heading of the page</div>
@@ -104,7 +136,7 @@ Capital letters can be used for user defined strings, e.g. alt and value attribu
 		Content section
 	</div>
 
-	. section {
+	.section {
 		margin-top: 20px;
 		border-top: 1px solid #666;
 		padding-top: 20px;
@@ -115,4 +147,41 @@ Capital letters can be used for user defined strings, e.g. alt and value attribu
 	```html
 	// yes
 	<img src="logo.png" alt="Company Logo" />
+	```
+
+## Forms
+
+- Every form input or other element should have a label for it. This is absolutely mandatory for checkboxes and radio buttons - placing the form element as a child of the label will automatically associates them without the need to use for and id attributes.
+	```html
+	// no
+	<p>Enter Username</p>
+	<input type="text" name="username" />
+
+	// yes
+	<label for="username">Enter Username</label>
+	<input type="text" name="username" id="username" />
+
+	// yes
+	<label>
+		Enter Username
+		<input type="text" name="username" />
+	</label>
+	```
+
+- Don't set values for the boolean attributes (disabled, selected, checked).
+	```html
+	// no
+	<input type="text" name="company" disabled="disabled" />
+
+	// no
+	<input type="text" name="company" disabled="true" />
+
+	// yes
+	<input type="text" name="company" disabled />
+
+	//yes
+	<select>
+		<option value="0" selected>Check option</option>
+		...
+	</select>
 	```
