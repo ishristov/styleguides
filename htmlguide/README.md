@@ -179,7 +179,7 @@ Capital letters can be used for user defined strings, e.g. alt and value attribu
   // yes
   <input type="text" name="company" disabled />
 
-  //yes
+  // yes
   <select>
     <option value="0" selected>Check option</option>
     ...
