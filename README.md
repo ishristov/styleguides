@@ -11,7 +11,7 @@ and apply your coding style with it.
 
   - [HTML guide](https://github.com/ishristov/styleguides/tree/master/htmlguide)
   - [CSS guide](https://github.com/ishristov/styleguides/tree/master/cssguide)
-  - [JavaScript guide](https://github.com/ishristov/styleguides/tree/master/javascriptguide)
+  - [JavaScript guide (TBD)](https://github.com/ishristov/styleguides/tree/master/javascriptguide)
 
 ## Inspiration
 

@@ -204,7 +204,7 @@
   ```
 
 - If elements share the same styling, move it to another class and use modifiers if some of the elements needs additional styling.
-  ```
+  ```css
   // no
   .btn {
     color: #fff;
