@@ -2,7 +2,7 @@
 
 ## Preparation
 
-- Learn and use [SASS](http://sass-lang.com/) or other preprocessor. This greatly improves the workflow and the readability and gives the tools to accomplish more with less code. The following guide suggests you are familiar with it.
+- Learn and use [SASS](http://sass-lang.com/) or other preprocessor. This greatly improves the workflow and the readability and gives the tools to accomplish more with less code. The following guide suggests you are familiar with such preprocessors.
 
 - Feel free to normalize the CSS vendor styles with [normalize.css](https://necolas.github.io/normalize.css/). This CSS file targets only what needs to be targeted in order to achieve improved consistency across different browsers and devices. It fixes some bugs but also keeps the usefull vendor styles instead of erasing everything (like CSS resets do).
 
@@ -10,7 +10,7 @@
 
 - Spacing
 
-  - Always use 2 spaces for indentation. Tabs might be rendered differently on different environments. Using 2 spaces also helps in making the lines shorter if there is a lot of nesting.
+  - Always use 2 spaces (soft tabs) for indentation. Tabs might be rendered differently on different environments. Using 2 spaces also helps in making the lines shorter if there is a lot of nesting.
 
   - Remove trailing white spaces.
 

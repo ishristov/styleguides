@@ -34,7 +34,7 @@
 
 ## General Formatting
 
-- Always use 2 spaces for indentation. Tabs might be rendered differently on different environments. Using 2 spaces also helps in making the lines shorter if there is a lot of nesting.
+- Always use 2 spaces (soft tabs) for indentation. Tabs might be rendered differently on different environments. Using 2 spaces also helps in making the lines shorter if there is a lot of nesting.
   ```html
   // yes
   <ul>
@@ -70,7 +70,7 @@
   <span>Text with <b>important</b> meaning</span>
   ```
 
-- Use double quote marks for attribute values. Using double quotes in HTML and single quotes in JavaScript allows us to copy HTML blocks safely from HTML to JavaScript in vise versa easily without breaking anything. 
+- Use double quote marks for attribute values. Using double quotes in HTML and single quotes in JavaScript allows us to copy HTML blocks safely from HTML to JavaScript and vise versa easily without breaking anything. 
   ```html
   // no
   <div class=main></div>
